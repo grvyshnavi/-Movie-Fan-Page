@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Buff Central</title>
+    <link rel="stylesheet" href="proj2.css">
+    <script defer src="proj2.js"></script>
+</head>
+<body>
+    
+    <header class="navbar">
+        <h1>Movie Buff Central</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#characters">Characters</a></li>
+                <li><a href="#trailers">Trailers</a></li>
+                <li><a href="#quotes">Quote of the Day</a></li>
+                <li><a href="#quiz">Trivia Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section home">
+        <h2>Welcome to Movie Buff Central!</h2>
+        <p>A fan page dedicated to your favorite movies and characters.</p>
+        <div class="posters">
+            <img src="c:\Users\DELL\Desktop\images1.jpeg" alt="Movie Poster 1">
+            <img src="c:\Users\DELL\Desktop\image2.jpg" alt="Movie Poster 2">
+        </div>
+    </section>
+
+    
+    <section id="characters" class="section characters">
+        <h2>Character Bios</h2>
+        <div class="character">
+            <img src="c:\Users\DELL\Desktop\img3.png" alt="Character 1">
+            <h3>Belle</h3>
+            <p>A beautiful, intelligent, and optimistic girl who wants more out of life than an ordinary 
+                existence</p>
+        </div>
+        <div class="character">
+            <img src="c:\Users\DELL\Desktop\images4.jpeg" alt="Character 2">
+            <h3>Beast</h3>
+            <p>A prince who was cursed by an enchantress to live as a beast until he found true love. 
+            The Beast has the head and horns of a buffalo, the body and arms of a bear, the eyebrows of a gorilla, the teeth, jaws,
+             and mane of a lion, the tusks of a wild boar, and the tail and legs of a wolf</p>
+        </div>
+    </section>
+
+   
+    <section id="trailers" class="section trailers">
+        <h2>Movie Trailers</h2>
+        <iframe width="560" height="315" 
+                src="https://www.youtube.com/watch?v=pnkgw6pAKkM&t=1s" 
+                title="Movie Trailer" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+        </iframe>
+    </section>
+
+    <section id="quotes" class="section quotes">
+        <h2>Quote of the Day</h2>
+        <p id="quote">Everything you've ever wanted is sitting on the other side of fear</p>
+        <button onclick="showRandomQuote()">Show Quote</button>
+    </section>
+
+    
+    <section id="quiz" class="section quiz">
+        <h2>Trivia Quiz</h2>
+        <form id="quizForm">
+            <p>1. What year was the first movie released?</p>
+            <input type="radio" name="q1" value="2001" required> 2001<br>
+            <input type="radio" name="q1" value="2008"> 2008<br>
+            <input type="radio" name="q1" value="2010"> 2010<br>
+
+            <p>2. Who directed the movie?</p>
+            <input type="radio" name="q2" value="Director A" required> Director A<br>
+            <input type="radio" name="q2" value="Director B"> Director B<br>
+            <input type="radio" name="q2" value="Director C"> Director C<br>
+
+            <button type="submit">Submit Answers</button>
+        </form>
+    </section>
+
+    
+</body>
+</html>
